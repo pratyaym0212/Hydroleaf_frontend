@@ -1,9 +1,9 @@
-import Device from "@/components/device/device"
+import Device from '@/components/device/device';
 
 export default function DeviceLayout() {
-    return(
-        <>
-        <Device/>
-        </>
-    )
+  return (
+    <>
+      <Device />
+    </>
+  );
 }

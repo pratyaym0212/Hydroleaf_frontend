@@ -12,7 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 header {
   background-color: #fff;
   padding: 20px;
@@ -43,7 +42,9 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: color 0.3s, transform 0.2s;
+  transition:
+    color 0.3s,
+    transform 0.2s;
 }
 
 nav a:hover {
@@ -56,14 +57,15 @@ section {
   text-align: center;
   opacity: 1;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 section.in-view {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .section-content {
   max-width: 1000px;
@@ -80,7 +82,9 @@ section.in-view {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
 }
 
 .btn:hover {
@@ -126,7 +130,7 @@ img.responsive {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -195,9 +199,9 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #FAF3E0;
+  background: #faf3e0;
   /* Warm beige */
-  color: #2C3E50;
+  color: #2c3e50;
 }
 
 /* Home Section */
@@ -223,9 +227,9 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: #E6F4EA;
+  background: #e6f4ea;
   /* Soft mint green */
-  color: #2C3E50;
+  color: #2c3e50;
   padding: 100px 20px;
   border-radius: 15px;
 }
@@ -243,15 +247,15 @@ body {
 
 /* Features Section */
 .features-section {
-  background: #FDFDFD;
+  background: #fdfdfd;
   /* Soft white */
   padding: 80px 20px;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: bold;
 }
-
 
 .features-grid {
   display: grid;
@@ -296,7 +300,9 @@ h2, h3 {
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
 }
 
 /* Visible state */
@@ -305,10 +311,8 @@ h2, h3 {
   transform: translateY(0);
 }
 
-
-
 .feature-item {
-  background: #C3D8C5;
+  background: #c3d8c5;
   /* Muted sage green */
   padding: 25px;
   border-radius: 12px;
@@ -316,7 +320,7 @@ h2, h3 {
 }
 
 .feature-item:hover {
-  background: #A0C3A5;
+  background: #a0c3a5;
   /* Dusty teal */
   transform: translateY(-5px);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
@@ -324,9 +328,9 @@ h2, h3 {
 
 /* How It Works Section */
 .how-it-works-section {
-  background: #FAF3E0;
+  background: #faf3e0;
   /* Warm beige */
-  color: #2C3E50;
+  color: #2c3e50;
   padding: 80px 20px;
   border-radius: 15px;
   margin-top: 40px;
@@ -347,14 +351,14 @@ h2, h3 {
 
 /* Benefits Section */
 .benefits-section {
-  background: #E6F4EA;
+  background: #e6f4ea;
   /* Soft mint green */
   padding: 60px 20px;
 }
 
 /* CTA Section */
 .cta-section {
-  background: #A0C3A5;
+  background: #a0c3a5;
   /* Dusty teal */
   color: white;
   padding: 80px 20px;
@@ -374,7 +378,7 @@ h2, h3 {
   transition: all 0.3s ease;
 }
 .primary-btn {
-  background: #4A7C59;
+  background: #4a7c59;
   color: white;
   padding: 14px 24px;
   font-size: 18px;
@@ -383,17 +387,17 @@ h2, h3 {
   transition: all 0.3s ease;
 }
 .primary-btn:hover {
-  background: #3D684C;
+  background: #3d684c;
 }
 
 .secondary-btn {
   background: white;
-  color: #4A7C59;
-  border: 2px solid #4A7C59;
+  color: #4a7c59;
+  border: 2px solid #4a7c59;
 }
 
 .secondary-btn:hover {
-  background: #4A7C59;
+  background: #4a7c59;
   color: white;
 }
 
@@ -446,7 +450,6 @@ h2, h3 {
 
 /* Responsive Contact Section */
 @media screen and (max-width: 768px) {
-
   .contact-section input,
   .contact-section textarea {
     font-size: 0.9rem;
@@ -455,7 +458,6 @@ h2, h3 {
 }
 
 @media screen and (max-width: 480px) {
-
   .contact-section input,
   .contact-section textarea {
     font-size: 0.85rem;
@@ -485,24 +487,20 @@ h2, h3 {
 
 .dark .btn,
 .dark .primary-btn {
-  background-color: #4A7C59;
+  background-color: #4a7c59;
   color: #fff;
 }
 
 .dark .secondary-btn {
   background: transparent;
-  color: #4A7C59;
-  border-color: #4A7C59;
+  color: #4a7c59;
+  border-color: #4a7c59;
 }
 
 .dark footer {
   background-color: #111;
   color: #ccc;
 }
-
-
-
-
 
 /* Apply Animation Only When Scrolling */
 section.hidden {
@@ -528,88 +526,87 @@ section.show {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   }
   /* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #f5f5f5;
-}
+  body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
 
-.blog-container{
-  background-color: #252525;
-}
-/* Header */
-.dark-mode header {
-  background-color: #1e1e1e;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
+  .blog-container {
+    background-color: #252525;
+  }
+  /* Header */
+  .dark-mode header {
+    background-color: #1e1e1e;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
 
-/* Navbar Links */
-.dark-mode nav a {
-  color: #ddd;
-}
+  /* Navbar Links */
+  .dark-mode nav a {
+    color: #ddd;
+  }
 
-.dark-mode nav a:hover {
-  color: #76c893;
-}
+  .dark-mode nav a:hover {
+    color: #76c893;
+  }
 
-/* Sections */
-.dark-mode section {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
-  border-radius: 10px;
-  transition: background-color 0.3s ease-in-out;
-}
+  /* Sections */
+  .dark-mode section {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
 
-/* Buttons */
-.dark-mode .btn {
-  background-color: #76c893;
-  color: #fff;
-}
+  /* Buttons */
+  .dark-mode .btn {
+    background-color: #76c893;
+    color: #fff;
+  }
 
-.dark-mode .btn:hover {
-  background-color: #5aa173;
-}
+  .dark-mode .btn:hover {
+    background-color: #5aa173;
+  }
 
-/* Blog Section */
-.dark-mode .blog-container {
-  background-color: #252525;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-}
+  /* Blog Section */
+  .dark-mode .blog-container {
+    background-color: #252525;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
 
-.dark-mode .blog-content h3 {
-  color: #fff;
-}
+  .dark-mode .blog-content h3 {
+    color: #fff;
+  }
 
+  .dark-mode .blog-content p {
+    color: #ddd;
+  }
 
+  /* Contact Section */
+  .dark-mode .contact-section input,
+  .dark-mode .contact-section textarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
 
-.dark-mode .blog-content p {
-  color: #ddd;
-}
+  /* Footer */
+  .dark-mode footer {
+    background-color: #222;
+    color: #fff;
+  }
 
-/* Contact Section */
-.dark-mode .contact-section input,
-.dark-mode .contact-section textarea {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #444;
-}
+  /* WhatsApp Icon */
+  .dark-mode .whatsapp-icon {
+    background-color: #128c7e;
+  }
 
-/* Footer */
-.dark-mode footer {
-  background-color: #222;
-  color: #fff;
-}
-
-/* WhatsApp Icon */
-.dark-mode .whatsapp-icon {
-  background-color: #128C7E;
-}
-
-/* Smooth transition */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
+  /* Smooth transition */
+  body {
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
 
   nav a {
     color: #eee;
@@ -621,14 +618,14 @@ body {
 
   .btn,
   .primary-btn {
-    background-color: #4A7C59; /* Adjust as needed for dark mode */
+    background-color: #4a7c59; /* Adjust as needed for dark mode */
     color: #fff;
   }
 
   .secondary-btn {
     background: transparent;
-    color: #4A7C59;
-    border-color: #4A7C59;
+    color: #4a7c59;
+    border-color: #4a7c59;
   }
 
   footer {
@@ -638,12 +635,12 @@ body {
 
   /* Add overrides for any other components as needed */
   .contact-section {
-    background: #FAF3E0; /* Warm beige */
+    background: #faf3e0; /* Warm beige */
     padding: 80px 20px;
     text-align: center;
     border-radius: 15px;
   }
-  
+
   .contact-container {
     max-width: 800px;
     margin: 0 auto;
@@ -652,19 +649,19 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .contact-section h2 {
     font-size: 2rem;
-    color: #2C3E50;
+    color: #2c3e50;
     margin-bottom: 20px;
   }
-  
+
   .contact-section p {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 30px;
   }
-  
+
   .contact-section input,
   .contact-section textarea {
     width: 100%;
@@ -674,63 +671,65 @@ body {
     border: 1px solid #ccc;
     font-size: 1rem;
   }
-  
+
   .contact-section textarea {
     height: 150px;
     resize: none;
   }
-  
+
   .contact-section .btn {
-    background-color: #4A7C59;
+    background-color: #4a7c59;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 12px 30px;
     border-radius: 30px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    transition:
+      background-color 0.3s ease-in-out,
+      transform 0.2s;
   }
-  
+
   .contact-section .btn:hover {
-    background-color: #3D684C;
+    background-color: #3d684c;
     transform: scale(1.05);
   }
-  
+
   /* About Section */
   .about-section {
-    background: #E6F4EA; /* Soft mint green */
+    background: #e6f4ea; /* Soft mint green */
     padding: 80px 20px;
     text-align: center;
     border-radius: 15px;
   }
-  
+
   .about-container {
     max-width: 1000px;
     margin: 0 auto;
   }
-  
+
   .about-container h2 {
     font-size: 2rem;
-    color: #2C3E50;
+    color: #2c3e50;
   }
-  
+
   .about-container p {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.8;
   }
-  
+
   /* Testimonials Section */
   .testimonials-section {
-    background: #FDFDFD;
+    background: #fdfdfd;
     padding: 80px 20px;
     text-align: center;
   }
-  
+
   .testimonials-container {
     max-width: 1000px;
     margin: 0 auto;
   }
-  
+
   .testimonial {
     background: white;
     padding: 25px;
@@ -738,32 +737,32 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
-  
+
   .testimonial p {
     font-size: 1.2rem;
     color: #555;
     font-style: italic;
   }
-  
+
   .testimonial h4 {
     font-size: 1.4rem;
-    color: #2C3E50;
+    color: #2c3e50;
     margin-top: 15px;
   }
-  
+
   /* FAQ Section */
   .faq-section {
-    background: #FAF3E0;
+    background: #faf3e0;
     padding: 80px 20px;
     text-align: center;
     border-radius: 15px;
   }
-  
+
   .faq-container {
     max-width: 1000px;
     margin: 0 auto;
   }
-  
+
   .faq-item {
     background: white;
     padding: 20px;
@@ -771,43 +770,41 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
   }
-  
+
   .faq-item h3 {
     font-size: 1.4rem;
-    color: #2C3E50;
+    color: #2c3e50;
   }
-  
+
   .faq-item p {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
   }
-  
+
   /* Responsive Contact Section */
   @media screen and (max-width: 768px) {
     .contact-container {
       padding: 30px;
     }
-  
+
     .contact-section input,
     .contact-section textarea {
       font-size: 1rem;
       padding: 12px;
     }
   }
-  
+
   @media screen and (max-width: 480px) {
     .contact-container {
       padding: 20px;
     }
-  
+
     .contact-section input,
     .contact-section textarea {
       font-size: 0.9rem;
       padding: 10px;
     }
   }
-  
-  
 }
 /* Contact Section */

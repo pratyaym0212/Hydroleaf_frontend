@@ -1,5 +1,5 @@
 import '@/styles/globals.css';
-import '@/styles/styles.css'
+import '@/styles/styles.css';
 
 import { PropsWithChildren } from 'react';
 import { LanguageProvider } from '@inlang/paraglide-next';
@@ -53,7 +53,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <LanguageProvider>
       <html lang={languageTag()} suppressHydrationWarning>
-        <body className={cn('min-h-screen font-sans page-transition', fonts)}>
+        <body className={cn('page-transition min-h-screen font-sans', fonts)}>
           <ThemeProvider attribute="class">
             <Navbar />
             {children}

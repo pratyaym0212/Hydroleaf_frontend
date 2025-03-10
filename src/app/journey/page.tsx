@@ -1,9 +1,9 @@
-import Journey from "@/components/journey/journey"
+import Journey from '@/components/journey/journey';
 
 export default function JourneyLayout() {
-    return(
-        <>
-        <Journey/>
-        </>
-    )
+  return (
+    <>
+      <Journey />
+    </>
+  );
 }

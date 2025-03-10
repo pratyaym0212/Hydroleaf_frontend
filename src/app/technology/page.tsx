@@ -1,9 +1,9 @@
-import Technology from "@/components/technology/technology"
+import Technology from '@/components/technology/technology';
 
 export default function TechnologyLayout() {
-    return(
-        <>
-        <Technology/>
-        </>
-    )
+  return (
+    <>
+      <Technology />
+    </>
+  );
 }
