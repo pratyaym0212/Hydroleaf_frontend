@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/device/page": "app/device/page.js",
+  "/journey/page": "app/journey/page.js",
+  "/technology/page": "app/technology/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/contact/page": "app/contact/page.js"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>http://localhost:3000</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="http://localhost:3000/pl" />
+<lastmod>2025-03-10T16:32:04.174Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>1</priority>
+</url>
+</urlset>
