@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
         from_name: name,
         message: message,
         reply_to: email,
-        }, 'pratyaymazumdar02@gmail.com');
+        }, '3oGq6Ov_cS_txejuB');
       setStatus('Message sent successfully!');
       setName('');
       setEmail('');
