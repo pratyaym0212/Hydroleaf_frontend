@@ -10,8 +10,11 @@ import Link from 'next/link';
 import image1 from '../../public/images/Image1.png';
 import image2 from '../../public/images/Image2.png';
 import image3 from '../../public/images/Image3.png';
+import image7 from '../../public/images/Image7.jpg';
+import image8 from '../../public/images/Image8.jpg';
+import image9 from '../../public/images/Image9.jpg';
 
-const images = [image1, image2, image3];
+const images = [image7, image8, image9];
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },

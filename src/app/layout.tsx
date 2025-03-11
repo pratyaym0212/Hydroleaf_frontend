@@ -25,9 +25,9 @@ export const generateMetadata = (): Metadata => ({
   keywords: siteConfig.keywords(),
   robots: { index: true, follow: true },
   icons: {
-    icon: '/favicon/favicon.ico',
-    shortcut: '/favicon/favicon-16x16.png',
-    apple: '/favicon/apple-touch-icon.png',
+    icon: '/images/logo_transparent.png',
+    shortcut: '/images/logo_transparent.png',
+    apple: '/images/logo_transparent.png',
   },
   verification: {
     google: siteConfig.googleSiteVerificationId(),

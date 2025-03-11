@@ -72,7 +72,28 @@ section.in-view {
   margin: 0 auto;
   font-size: 1.2rem;
   font-weight: 500;
+  line-height: 1.8; /* Improved line spacing for readability */
+  text-align: justify; /* Aligns text evenly on both sides */
+  padding: 20px; /* Adds spacing around text */
+  letter-spacing: 0.5px; /* Slightly increases letter spacing for a cleaner look */
+  color: #2c3e50; /* Ensures good contrast */
 }
+
+.dark .section-content {
+  color: #f5f5f5; /* Light text for dark mode */
+}
+.section-content h2 {
+  margin-top: 0; /* Removes default margin */
+  margin-bottom: 15px; /* Adds spacing below h2 */
+  font-size: 2rem; /* Makes the heading stand out */
+  font-weight: 600; /* Bold for emphasis */
+  text-align: center; /* Ensures it's centered */
+}
+
+.dark .section-content h2 {
+  color: #f5f5f5; /* Light text for dark mode */
+}
+
 
 .btn {
   padding: 12px 30px;
@@ -186,6 +207,7 @@ footer {
 .blog-content h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: #555;
 }
 
 .blog-content p {
@@ -282,15 +304,17 @@ h3 {
   align-items: center; /* Center items within each step */
   justify-content: center;
   text-align: center;
-  max-width: 300px; /* Adjust size as needed */
+  max-width: 3000px; /* Adjust size as needed */
 }
 
 .step-item img {
-  width: 100px; /* Adjust image size */
+  width: 300px; /* Adjust image size */
   height: auto;
   margin-bottom: 15px;
   display: block;
 }
+
+/*  */
 .section-content img {
   display: block;
   margin: 0 auto;
@@ -319,6 +343,9 @@ h3 {
   transition: all 0.3s ease-in-out;
 }
 
+.dark .feature-item { 
+  color: #0b370f; /* White text for contrast */
+}
 .feature-item:hover {
   background: #a0c3a5;
   /* Dusty teal */
@@ -335,19 +362,23 @@ h3 {
   border-radius: 15px;
   margin-top: 40px;
 }
+.dark .features-section {
+  background: #000000; /* Black in Dark Mode */
+  color: #ffffff; /* White text for contrast */
+}
 
-.steps-grid {
+/* .steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1000px;
   margin: 30px auto;
-}
+} */
 
-.step-item img {
+/* .step-item img {
   width: 90px;
   margin-bottom: 15px;
-}
+} */
 
 /* Benefits Section */
 .benefits-section {
@@ -560,7 +591,7 @@ section.show {
 
   /* Buttons */
   .dark-mode .btn {
-    background-color: #76c893;
+    background-color: #085122;
     color: #fff;
   }
 
@@ -575,7 +606,7 @@ section.show {
   }
 
   .dark-mode .blog-content h3 {
-    color: #fff;
+    color: #131212;
   }
 
   .dark-mode .blog-content p {

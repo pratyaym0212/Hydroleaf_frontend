@@ -7,8 +7,8 @@ import image2 from '../../../public/images/Image2.png';
 const Device: React.FC = () => {
   return (
     <section id="device">
-      <h2>Our Devices</h2>
       <div className="section-content">
+        <h2>Our Devices</h2>
         <Image
           src={image2}
           alt="Device"
@@ -51,7 +51,7 @@ const Device: React.FC = () => {
             software updates.
           </li>
         </ul>
-        <p className="mt-4 text-gray-700">
+        <p>
           This device makes farming easier by saving time, reducing waste, and
           improving plant growth. It&apos;s perfect for modern hydroponic
           setups!
