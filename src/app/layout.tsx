@@ -49,16 +49,34 @@ export const generateMetadata = (): Metadata => ({
   },
 });
 
-const RootLayout = ({ children }: PropsWithChildren) => {
+export const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <LanguageProvider>
       <html lang={languageTag()} suppressHydrationWarning>
-        <body className={cn('page-transition min-h-screen font-sans', fonts)}>
+        <head>
+          {/* Add Google Font Link */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@100..900&display=swap"
+            rel="stylesheet"
+          />
+        </head>
+        <body
+          className={cn(
+            'page-transition flex min-h-screen flex-col font-sans',
+            fonts
+          )}
+        >
           <ThemeProvider attribute="class">
             <Navbar />
-            {children}
-            <ThemeSwitcher className="absolute bottom-5 right-5 z-10" />
+            <main className="grow">{children}</main>
             <Footer />
+            <ThemeSwitcher className="fixed bottom-5 right-5 z-10" />
             <Toaster />
           </ThemeProvider>
         </body>

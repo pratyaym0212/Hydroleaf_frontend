@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
+        hostname: 'hydroleaf.s3.ap-south-1.amazonaws.com',
       },
     ],
   },

@@ -1,0 +1,99 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [649],
+  {
+    9810: (e, t, i) => {
+      Promise.resolve().then(i.bind(i, 5892));
+    },
+    5565: (e, t, i) => {
+      'use strict';
+      i.d(t, { default: () => a.a });
+      var n = i(4146),
+        a = i.n(n);
+    },
+    4146: (e, t, i) => {
+      'use strict';
+      Object.defineProperty(t, '__esModule', { value: !0 }),
+        (function (e, t) {
+          for (var i in t)
+            Object.defineProperty(e, i, { enumerable: !0, get: t[i] });
+        })(t, {
+          default: function () {
+            return l;
+          },
+          getImageProps: function () {
+            return s;
+          },
+        });
+      let n = i(306),
+        a = i(666),
+        r = i(7970),
+        o = n._(i(5514));
+      function s(e) {
+        let { props: t } = (0, a.getImgProps)(e, {
+          defaultLoader: o.default,
+          imgConf: {
+            deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+            imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+            path: '/_next/image',
+            loader: 'default',
+            dangerouslyAllowSVG: !1,
+            unoptimized: !1,
+          },
+        });
+        for (let [e, i] of Object.entries(t)) void 0 === i && delete t[e];
+        return { props: t };
+      }
+      let l = r.Image;
+    },
+    5892: (e, t, i) => {
+      'use strict';
+      i.d(t, { default: () => o });
+      var n = i(5155);
+      i(2115);
+      var a = i(5565),
+        r = i(1108);
+      let o = () =>
+        (0, n.jsx)('section', {
+          id: 'journey',
+          children: (0, n.jsxs)('div', {
+            className: 'section-content',
+            children: [
+              (0, n.jsx)('h2', { children: 'Our Journey' }),
+              (0, n.jsx)(a.default, {
+                src: r.A,
+                alt: 'Hydroleaf Journey',
+                className: 'responsive',
+                width: 600,
+                height: 400,
+              }),
+              (0, n.jsx)('p', {
+                children:
+                  'Hydroleaf started with a vision to revolutionize farming through smart technology. What began as a small initiative has now grown into a pioneering effort in hydroponic farming, combining automation, IoT, and AI to make agriculture more efficient, profitable, and eco-friendly.',
+              }),
+              (0, n.jsx)('p', {
+                children:
+                  'Our journey is driven by a passion for sustainability and innovation, empowering farmers with cutting-edge solutions that reduce resource waste and increase yield. With continuous research and technological advancements, Hydroleaf is shaping the future of smart farming.',
+              }),
+            ],
+          }),
+        });
+    },
+    1108: (e, t, i) => {
+      'use strict';
+      i.d(t, { A: () => n });
+      let n = {
+        src: '/_next/static/media/Image3.60ea571f.png',
+        height: 1024,
+        width: 1792,
+        blurDataURL:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAASFBMVEVrZklyblR8cVuJcF2AemV/cE6JgVmTfliJZU6LinqLeU5WWk96ZUqikX13cGfMnmd2i21zgFpzgFyrkoF/fG9bVkHIooJxeEE+CjXJAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAMUlEQVR4nAXBBwIAEAwEsCulam///6kEOxm4ZhWaqbMASDSHd+fBcPQSJaOGsIq95QMeIQF3PczCdAAAAABJRU5ErkJggg==',
+        blurWidth: 8,
+        blurHeight: 5,
+      };
+    },
+  },
+  (e) => {
+    var t = (t) => e((e.s = t));
+    e.O(0, [970, 441, 517, 358], () => t(9810)), (_N_E = e.O());
+  },
+]);

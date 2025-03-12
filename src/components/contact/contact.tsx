@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import Image from 'next/image';
 
 import contactus from '../../../public/images/Contactus.png';
@@ -17,42 +16,31 @@ const Contact: React.FC = () => {
     setLoading(true);
     setStatus('');
 
-    const trimmedName = name.trim();
-    const trimmedEmail = email.trim();
-    const trimmedMessage = message.trim();
-
-    if (!trimmedName || !trimmedEmail || !trimmedMessage) {
+    if (!name.trim() || !email.trim() || !message.trim()) {
       setStatus('Please fill out all fields.');
       setLoading(false);
       return;
     }
 
     try {
-      console.log('Sending email:', {
-        name: trimmedName,
-        email: trimmedEmail,
-        message: trimmedMessage,
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
       });
 
-      await emailjs.send(
-        'service_3cz4i1h',
-        'template_bdnjc81',
-        {
-          to_name: 'Hydroleaf',
-          from_name: trimmedName,
-          message: trimmedMessage,
-          reply_to: trimmedEmail,
-        },
-        '3oGq6Ov_cS_txejuB' // Replace with your actual EmailJS public key
-      );
-
-      setStatus('Message sent successfully!');
-      setName('');
-      setEmail('');
-      setMessage('');
+      const data = await response.json();
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        setStatus(data.error || 'Failed to send message. Try again.');
+      }
     } catch (error) {
-      console.error('Error sending email:', error); // Detailed error logging
-      setStatus('Failed to send message. Please try again later.');
+      console.error('Error sending message:', error);
+      setStatus('Failed to send message. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -60,7 +48,6 @@ const Contact: React.FC = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-8 md:flex-row">
-      {/* Left Side - Image */}
       <div className="flex w-full justify-center md:w-1/2">
         <Image
           src={contactus}
@@ -70,7 +57,6 @@ const Contact: React.FC = () => {
         />
       </div>
 
-      {/* Right Side - Contact Form */}
       <div className="mt-6 w-full rounded-lg bg-white p-6 shadow-lg md:mt-0 md:w-1/2 md:p-8">
         <h2 className="mb-4 text-2xl font-bold text-gray-800">Contact Us</h2>
         <form onSubmit={handleSubmit}>

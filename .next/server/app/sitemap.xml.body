@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-<loc>http://localhost:3000</loc>
-<xhtml:link rel="alternate" hreflang="pl" href="http://localhost:3000/pl" />
-<lastmod>2025-03-11T10:39:01.435Z</lastmod>
+<loc>http://localhost:5000</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="http://localhost:5000/pl" />
+<lastmod>2025-03-12T18:27:25.098Z</lastmod>
 <changefreq>yearly</changefreq>
 <priority>1</priority>
 </url>
