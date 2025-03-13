@@ -4,40 +4,40 @@
   (e.id = 492),
     (e.ids = [492]),
     (e.modules = {
-      846: (e) => {
+      10846: (e) => {
         e.exports = require('next/dist/compiled/next-server/app-page.runtime.prod.js');
       },
-      9121: (e) => {
+      19121: (e) => {
         e.exports = require('next/dist/server/app-render/action-async-storage.external.js');
       },
       3295: (e) => {
         e.exports = require('next/dist/server/app-render/after-task-async-storage.external.js');
       },
-      9294: (e) => {
+      29294: (e) => {
         e.exports = require('next/dist/server/app-render/work-async-storage.external.js');
       },
-      3033: (e) => {
+      63033: (e) => {
         e.exports = require('next/dist/server/app-render/work-unit-async-storage.external.js');
       },
-      3873: (e) => {
+      33873: (e) => {
         e.exports = require('path');
       },
-      3781: (e, r, t) => {
+      48902: (e, r, t) => {
         t.r(r),
           t.d(r, {
-            GlobalError: () => a.a,
+            GlobalError: () => d.a,
             __next_app__: () => u,
             pages: () => l,
             routeModule: () => x,
             tree: () => p,
           });
-        var n = t(260),
-          o = t(8203),
-          s = t(5155),
-          a = t.n(s),
-          d = t(7292),
-          i = {};
-        for (let e in d)
+        var n = t(70260),
+          o = t(28203),
+          s = t(25155),
+          d = t.n(s),
+          i = t(67292),
+          a = {};
+        for (let e in i)
           0 >
             [
               'default',
@@ -46,8 +46,8 @@
               'GlobalError',
               '__next_app__',
               'routeModule',
-            ].indexOf(e) && (i[e] = () => d[e]);
-        t.d(r, i);
+            ].indexOf(e) && (a[e] = () => i[e]);
+        t.d(r, a);
         let p = [
             '',
             {
@@ -59,7 +59,7 @@
                     {},
                     {
                       page: [
-                        () => Promise.resolve().then(t.t.bind(t, 9937, 23)),
+                        () => Promise.resolve().then(t.t.bind(t, 19937, 23)),
                         'next/dist/client/components/not-found-error',
                       ],
                     },
@@ -70,19 +70,19 @@
             },
             {
               layout: [
-                () => Promise.resolve().then(t.bind(t, 665)),
-                '/Users/Deadpool/Hydroleaf_frontend/src/app/layout.tsx',
+                () => Promise.resolve().then(t.bind(t, 70665)),
+                'C:\\Users\\Admin\\New folder (2)\\Hydroleaf_frontend\\src\\app\\layout.tsx',
               ],
               'not-found': [
-                () => Promise.resolve().then(t.t.bind(t, 9937, 23)),
+                () => Promise.resolve().then(t.t.bind(t, 19937, 23)),
                 'next/dist/client/components/not-found-error',
               ],
               forbidden: [
-                () => Promise.resolve().then(t.t.bind(t, 9116, 23)),
+                () => Promise.resolve().then(t.t.bind(t, 69116, 23)),
                 'next/dist/client/components/forbidden-error',
               ],
               unauthorized: [
-                () => Promise.resolve().then(t.t.bind(t, 1485, 23)),
+                () => Promise.resolve().then(t.t.bind(t, 41485, 23)),
                 'next/dist/client/components/unauthorized-error',
               ],
             },
@@ -105,6 +105,6 @@
   var r = require('../../webpack-runtime.js');
   r.C(e);
   var t = (e) => r((r.s = e)),
-    n = r.X(0, [680, 434, 49, 797], () => t(3781));
+    n = r.X(0, [994, 187, 434, 613, 981], () => t(48902));
   module.exports = n;
 })();

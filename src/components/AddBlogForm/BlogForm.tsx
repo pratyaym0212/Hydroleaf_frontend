@@ -4,16 +4,6 @@ import { useState } from 'react';
 // import { signIn, signOut, useSession } from "next-auth/react";
 
 const BlogForm = () => {
-  // const { data: session } = useSession(); // Get authentication session
-
-  // if (!session) {
-  //   return (
-  //     <div className="flex flex-col items-center p-4">
-  //       <h2 className="text-lg font-bold">Restricted Access</h2>
-  //       <p>You need to log in to add or edit blogs.</p>
-  //       <button onClick={() => signIn("credentials", { callbackUrl: "/" })}>Sign In</button>       </div>
-  //   );
-  // }
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [file, setFile] = useState<File | null>(null);
@@ -110,13 +100,6 @@ const BlogForm = () => {
 
   return (
     <div className="flex flex-col gap-6 rounded border p-4">
-      {/* <div className="flex justify-between items-center">
-      <h2 className="text-lg font-bold">Add Blog</h2>
-      <button onClick={() => signOut()} className="bg-red-500 text-white p-2 rounded">
-        Log out
-      </button>
-    </div>   */}
-      {/* Create or Edit Blog */}
       <form
         onSubmit={blogId ? handleEdit : handleCreate}
         className="flex flex-col gap-4"

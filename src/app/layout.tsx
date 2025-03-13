@@ -10,6 +10,7 @@ import Navbar from '@/components/navbar/navbar';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ThemeSwitcher } from '@/components/theme-switcher';
 import { Toaster } from '@/components/ui/toaster';
+import { AuthProvider } from '@/context/AuthContext';
 import { siteConfig } from '@/lib/constant';
 import { fonts } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
@@ -51,37 +52,39 @@ export const generateMetadata = (): Metadata => ({
 
 export const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <LanguageProvider>
-      <html lang={languageTag()} suppressHydrationWarning>
-        <head>
-          {/* Add Google Font Link */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="anonymous"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@100..900&display=swap"
-            rel="stylesheet"
-          />
-        </head>
-        <body
-          className={cn(
-            'page-transition flex min-h-screen flex-col font-sans',
-            fonts
-          )}
-        >
-          <ThemeProvider attribute="class">
-            <Navbar />
-            <main className="grow">{children}</main>
-            <Footer />
-            <ThemeSwitcher className="fixed bottom-5 right-5 z-10" />
-            <Toaster />
-          </ThemeProvider>
-        </body>
-      </html>
-    </LanguageProvider>
+    <AuthProvider>
+      <LanguageProvider>
+        <html lang={languageTag()} suppressHydrationWarning>
+          <head>
+            {/* Add Google Font Link */}
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+              rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossOrigin="anonymous"
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@100..900&display=swap"
+              rel="stylesheet"
+            />
+          </head>
+          <body
+            className={cn(
+              'page-transition flex min-h-screen flex-col font-sans',
+              fonts
+            )}
+          >
+            <ThemeProvider attribute="class">
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+              <ThemeSwitcher className="fixed bottom-5 right-5 z-10" />
+              <Toaster />
+            </ThemeProvider>
+          </body>
+        </html>
+      </LanguageProvider>
+    </AuthProvider>
   );
 };
 

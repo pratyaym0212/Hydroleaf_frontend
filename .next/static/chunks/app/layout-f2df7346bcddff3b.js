@@ -1,0 +1,468 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [177],
+  {
+    2317: (e, t, r) => {
+      Promise.resolve().then(r.bind(r, 53)),
+        Promise.resolve().then(r.t.bind(r, 8173, 23)),
+        Promise.resolve().then(r.bind(r, 6645)),
+        Promise.resolve().then(r.bind(r, 7208)),
+        Promise.resolve().then(r.bind(r, 2905)),
+        Promise.resolve().then(r.bind(r, 9020)),
+        Promise.resolve().then(r.bind(r, 8435)),
+        Promise.resolve().then(r.t.bind(r, 5786, 23)),
+        Promise.resolve().then(r.t.bind(r, 260, 23)),
+        Promise.resolve().then(r.t.bind(r, 1790, 23)),
+        Promise.resolve().then(r.t.bind(r, 6596, 23));
+    },
+    6645: (e, t, r) => {
+      'use strict';
+      r.d(t, { default: () => d });
+      var s = r(5155),
+        o = r(2115),
+        a = r(5565),
+        n = r(8173),
+        i = r.n(n);
+      let l = {
+          src: '/_next/static/media/logo_transparent.619f7114.png',
+          height: 1024,
+          width: 1024,
+          blurDataURL:
+            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAHlBMVEVMaXF9+6dr8qKE+pBQ63ue/JtG44ZZ73yD942k+53EUPoLAAAACnRSTlMAEyymqnCJa4CQMkXzqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAACdJREFUeJxjYEAGjFCalZMJQjMzc4AZ7Cws7GAGExsbRIqBEaYYDAAKygBNWqXcKAAAAABJRU5ErkJggg==',
+          blurWidth: 8,
+          blurHeight: 8,
+        },
+        d = () => {
+          let [e, t] = (0, o.useState)(!1);
+          return (
+            (0, o.useEffect)(() => {
+              let e = () => {
+                t(window.scrollY > 50);
+              };
+              return (
+                window.addEventListener('scroll', e),
+                () => window.removeEventListener('scroll', e)
+              );
+            }, []),
+            (0, s.jsxs)('header', {
+              className: 'navbar '.concat(e ? 'scrolled' : ''),
+              children: [
+                (0, s.jsx)('div', {
+                  className: 'logo-container page-transition',
+                  children: (0, s.jsx)(a.default, {
+                    src: l,
+                    alt: 'Hydroleaf Logo',
+                    className: 'logo',
+                    width: 150,
+                    height: 50,
+                  }),
+                }),
+                (0, s.jsxs)('nav', {
+                  children: [
+                    (0, s.jsx)(i(), { href: '/', children: 'Home' }),
+                    (0, s.jsx)(i(), { href: '/device', children: 'Device' }),
+                    (0, s.jsx)(i(), { href: '/journey', children: 'Journey' }),
+                    (0, s.jsx)(i(), {
+                      href: '/technology',
+                      children: 'Technology',
+                    }),
+                    (0, s.jsx)(i(), { href: '/blog', children: 'Blog' }),
+                    (0, s.jsx)(i(), { href: '/contact', children: 'Contact' }),
+                  ],
+                }),
+              ],
+            })
+          );
+        };
+    },
+    7208: (e, t, r) => {
+      'use strict';
+      r.d(t, { ThemeProvider: () => a });
+      var s = r(5155),
+        o = r(7113);
+      let a = (e) => {
+        let { children: t, ...r } = e;
+        return (0, s.jsx)(o.N, { ...r, children: t });
+      };
+    },
+    2905: (e, t, r) => {
+      'use strict';
+      r.d(t, { ThemeSwitcher: () => b });
+      var s = r(5155),
+        o = r(7113),
+        a = r(6535),
+        n = r(8482),
+        i = r(1354),
+        l = r(2783);
+      let d = {
+        sun: a.A,
+        moon: n.A,
+        logOut: i.A,
+        loader: l.A,
+        github: (e) =>
+          (0, s.jsx)('svg', {
+            viewBox: '0 0 438.549 438.549',
+            ...e,
+            children: (0, s.jsx)('path', {
+              fill: 'currentColor',
+              d: 'M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z',
+            }),
+          }),
+      };
+      var u = r(2115),
+        c = r(4698),
+        f = r(1027),
+        g = r(1567);
+      let h = (0, f.F)(
+          'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+          {
+            variants: {
+              variant: {
+                default:
+                  'bg-primary text-primary-foreground hover:bg-primary/90',
+                destructive:
+                  'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+                outline:
+                  'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
+                secondary:
+                  'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+                ghost: 'hover:bg-accent hover:text-accent-foreground',
+                link: 'text-primary underline-offset-4 hover:underline',
+              },
+              size: {
+                default: 'h-10 px-4 py-2',
+                sm: 'h-9 rounded-md px-3',
+                lg: 'h-11 rounded-md px-8',
+                icon: 'h-10 w-10',
+              },
+            },
+            defaultVariants: { variant: 'default', size: 'default' },
+          }
+        ),
+        v = u.forwardRef((e, t) => {
+          let { className: r, variant: o, size: a, asChild: n = !1, ...i } = e,
+            l = n ? c.DX : 'button';
+          return (0, s.jsx)(l, {
+            className: (0, g.cn)(h({ variant: o, size: a, className: r })),
+            ref: t,
+            ...i,
+          });
+        });
+      v.displayName = 'Button';
+      var m = r(5940);
+      let p = () => 'theme toggle',
+        x = () => 'zmień motyw',
+        A = function () {
+          var e;
+          arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+          let t =
+            arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+          return { en: p, pl: x }[
+            null !== (e = t.languageTag) && void 0 !== e ? e : (0, m.xw)()
+          ]();
+        },
+        b = (e) => {
+          let { className: t } = e,
+            { theme: r, setTheme: a } = (0, o.D)();
+          return (0, s.jsxs)(v, {
+            className: t,
+            variant: 'secondary',
+            size: 'icon',
+            'aria-label': A(),
+            onClick: () => a('light' === r ? 'dark' : 'light'),
+            children: [
+              (0, s.jsx)(d.sun, { className: 'dark:hidden' }),
+              (0, s.jsx)(d.moon, { className: 'hidden dark:block' }),
+            ],
+          });
+        };
+    },
+    9020: (e, t, r) => {
+      'use strict';
+      r.d(t, { Toaster: () => N });
+      var s = r(5155),
+        o = r(2115),
+        a = r(7044),
+        n = r(1027),
+        i = r(689),
+        l = r(1567);
+      let d = a.Kq,
+        u = o.forwardRef((e, t) => {
+          let { className: r, ...o } = e;
+          return (0, s.jsx)(a.LM, {
+            ref: t,
+            className: (0, l.cn)(
+              'fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:right-0 sm:top-0 sm:flex-col md:max-w-[420px]',
+              r
+            ),
+            ...o,
+          });
+        });
+      u.displayName = a.LM.displayName;
+      let c = (0, n.F)(
+          'group pointer-events-auto relative flex w-full items-center justify-between space-x-4 overflow-hidden rounded-md border p-6 pr-8 shadow-lg transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-top-full data-[state=open]:sm:slide-in-from-bottom-full',
+          {
+            variants: {
+              variant: {
+                default: 'border bg-background text-foreground',
+                destructive:
+                  'destructive group border-destructive bg-destructive text-destructive-foreground',
+              },
+            },
+            defaultVariants: { variant: 'default' },
+          }
+        ),
+        f = o.forwardRef((e, t) => {
+          let { className: r, variant: o, ...n } = e;
+          return (0, s.jsx)(a.bL, {
+            ref: t,
+            className: (0, l.cn)(c({ variant: o }), r),
+            ...n,
+          });
+        });
+      (f.displayName = a.bL.displayName),
+        (o.forwardRef((e, t) => {
+          let { className: r, ...o } = e;
+          return (0, s.jsx)(a.rc, {
+            ref: t,
+            className: (0, l.cn)(
+              'ring-offset-background hover:bg-secondary focus:ring-ring group-[.destructive]:border-muted/40 group-[.destructive]:hover:border-destructive/30 group-[.destructive]:hover:bg-destructive group-[.destructive]:hover:text-destructive-foreground group-[.destructive]:focus:ring-destructive inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+              r
+            ),
+            ...o,
+          });
+        }).displayName = a.rc.displayName);
+      let g = o.forwardRef((e, t) => {
+        let { className: r, ...o } = e;
+        return (0, s.jsx)(a.bm, {
+          ref: t,
+          className: (0, l.cn)(
+            'text-foreground/50 hover:text-foreground absolute right-2 top-2 rounded-md p-1 opacity-0 transition-opacity focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600',
+            r
+          ),
+          'toast-close': '',
+          ...o,
+          children: (0, s.jsx)(i.A, { className: 'size-4' }),
+        });
+      });
+      g.displayName = a.bm.displayName;
+      let h = o.forwardRef((e, t) => {
+        let { className: r, ...o } = e;
+        return (0, s.jsx)(a.hE, {
+          ref: t,
+          className: (0, l.cn)('text-sm font-semibold', r),
+          ...o,
+        });
+      });
+      h.displayName = a.hE.displayName;
+      let v = o.forwardRef((e, t) => {
+        let { className: r, ...o } = e;
+        return (0, s.jsx)(a.VY, {
+          ref: t,
+          className: (0, l.cn)('text-sm opacity-90', r),
+          ...o,
+        });
+      });
+      v.displayName = a.VY.displayName;
+      let m = 0,
+        p = new Map(),
+        x = (e) => {
+          if (p.has(e)) return;
+          let t = setTimeout(() => {
+            p.delete(e), w({ type: 'REMOVE_TOAST', toastId: e });
+          }, 1e6);
+          p.set(e, t);
+        },
+        A = (e, t) => {
+          switch (t.type) {
+            case 'ADD_TOAST':
+              return { ...e, toasts: [t.toast, ...e.toasts].slice(0, 1) };
+            case 'UPDATE_TOAST':
+              return {
+                ...e,
+                toasts: e.toasts.map((e) =>
+                  e.id === t.toast.id ? { ...e, ...t.toast } : e
+                ),
+              };
+            case 'DISMISS_TOAST': {
+              let { toastId: r } = t;
+              return (
+                r
+                  ? x(r)
+                  : e.toasts.forEach((e) => {
+                      x(e.id);
+                    }),
+                {
+                  ...e,
+                  toasts: e.toasts.map((e) =>
+                    e.id === r || void 0 === r ? { ...e, open: !1 } : e
+                  ),
+                }
+              );
+            }
+            case 'REMOVE_TOAST':
+              if (void 0 === t.toastId) return { ...e, toasts: [] };
+              return {
+                ...e,
+                toasts: e.toasts.filter((e) => e.id !== t.toastId),
+              };
+          }
+        },
+        b = [],
+        y = { toasts: [] };
+      function w(e) {
+        (y = A(y, e)),
+          b.forEach((e) => {
+            e(y);
+          });
+      }
+      function j(e) {
+        let { ...t } = e,
+          r = (m = (m + 1) % Number.MAX_SAFE_INTEGER).toString(),
+          s = () => w({ type: 'DISMISS_TOAST', toastId: r });
+        return (
+          w({
+            type: 'ADD_TOAST',
+            toast: {
+              ...t,
+              id: r,
+              open: !0,
+              onOpenChange: (e) => {
+                e || s();
+              },
+            },
+          }),
+          {
+            id: r,
+            dismiss: s,
+            update: (e) => w({ type: 'UPDATE_TOAST', toast: { ...e, id: r } }),
+          }
+        );
+      }
+      function N() {
+        let { toasts: e } = (function () {
+          let [e, t] = o.useState(y);
+          return (
+            o.useEffect(
+              () => (
+                b.push(t),
+                () => {
+                  let e = b.indexOf(t);
+                  e > -1 && b.splice(e, 1);
+                }
+              ),
+              [e]
+            ),
+            {
+              ...e,
+              toast: j,
+              dismiss: (e) => w({ type: 'DISMISS_TOAST', toastId: e }),
+            }
+          );
+        })();
+        return (0, s.jsxs)(d, {
+          children: [
+            e.map(function (e) {
+              let { id: t, title: r, description: o, action: a, ...n } = e;
+              return (0, s.jsxs)(
+                f,
+                {
+                  ...n,
+                  children: [
+                    (0, s.jsxs)('div', {
+                      className: 'grid gap-1',
+                      children: [
+                        r && (0, s.jsx)(h, { children: r }),
+                        o && (0, s.jsx)(v, { children: o }),
+                      ],
+                    }),
+                    a,
+                    (0, s.jsx)(g, {}),
+                  ],
+                },
+                t
+              );
+            }),
+            (0, s.jsx)(u, {}),
+          ],
+        });
+      }
+    },
+    8435: (e, t, r) => {
+      'use strict';
+      r.d(t, { A: () => i, AuthProvider: () => n });
+      var s = r(5155),
+        o = r(2115);
+      let a = (0, o.createContext)(null),
+        n = (e) => {
+          let { children: t } = e,
+            [r, n] = (0, o.useState)(null);
+          return (
+            (0, o.useEffect)(() => {
+              let e = localStorage.getItem('user');
+              e && n(e);
+            }, []),
+            (0, s.jsx)(a.Provider, {
+              value: {
+                user: r,
+                login: (e) => {
+                  localStorage.setItem('user', e), n(e);
+                },
+                logout: () => {
+                  localStorage.removeItem('user'), n(null);
+                },
+              },
+              children: t,
+            })
+          );
+        },
+        i = () => {
+          let e = (0, o.useContext)(a);
+          if (!e) throw Error('useAuth must be used within an AuthProvider');
+          return e;
+        };
+    },
+    1567: (e, t, r) => {
+      'use strict';
+      r.d(t, { cn: () => a });
+      var s = r(3463),
+        o = r(9795);
+      let a = function () {
+        for (var e = arguments.length, t = Array(e), r = 0; r < e; r++)
+          t[r] = arguments[r];
+        return (0, o.QP)((0, s.$)(t));
+      };
+    },
+    5940: (e, t, r) => {
+      'use strict';
+      let s;
+      r.d(t, { ij: () => d, k_: () => o, tH: () => i, xw: () => n });
+      let o = 'en',
+        a = ['en', 'pl'],
+        n = () => o,
+        i = (e) => {
+          (n = 'function' == typeof e ? l(e) : l(() => e)),
+            void 0 !== s && s(n());
+        };
+      function l(e) {
+        return () => {
+          let t = e();
+          if (!d(t))
+            throw Error(
+              "languageTag() didn't return a valid language tag. Check your setLanguageTag call"
+            );
+          return t;
+        };
+      }
+      function d(e) {
+        return a.includes(e);
+      }
+    },
+    5786: () => {},
+    260: () => {},
+  },
+  (e) => {
+    var t = (t) => e((e.s = t));
+    e.O(0, [523, 781, 515, 970, 465, 850, 441, 517, 358], () => t(2317)),
+      (_N_E = e.O());
+  },
+]);

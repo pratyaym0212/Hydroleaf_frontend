@@ -1,4 +1,4 @@
-// File: /Users/Deadpool/Hydroleaf_frontend/src/app/technology/page.tsx
+// File: C:\Users\Admin\New folder (2)\Hydroleaf_frontend\src\app\technology\page.tsx
 import * as entry from '../../../../src/app/technology/page.js';
 import type {
   ResolvingMetadata,

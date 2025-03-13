@@ -1,4 +1,4 @@
-// File: /Users/Deadpool/Hydroleaf_frontend/src/app/api/blog/route.tsx
+// File: C:\Users\Admin\New folder (2)\Hydroleaf_frontend\src\app\api\blog\route.tsx
 import * as entry from '../../../../../src/app/api/blog/route.js';
 import type { NextRequest } from 'next/server.js';
 

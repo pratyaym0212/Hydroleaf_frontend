@@ -1,19 +1,19 @@
 (exports.id = 635),
   (exports.ids = [635]),
   (exports.modules = {
-    5635: (e, t, i) => {
+    35635: (e, t, i) => {
       'use strict';
       i.d(t, { default: () => o.a });
-      var r = i(8516),
+      var r = i(38516),
         o = i.n(r);
     },
-    1066: (e, t, i) => {
-      let { createProxy: r } = i(3439);
+    71066: (e, t, i) => {
+      let { createProxy: r } = i(73439);
       e.exports = r(
-        '/Users/Deadpool/Hydroleaf_frontend/node_modules/next/dist/client/image-component.js'
+        'C:\\Users\\Admin\\New folder (2)\\Hydroleaf_frontend\\node_modules\\next\\dist\\client\\image-component.js'
       );
     },
-    2326: (e, t, i) => {
+    42326: (e, t, i) => {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 }),
         Object.defineProperty(t, 'getImgProps', {
@@ -22,9 +22,9 @@
             return a;
           },
         }),
-        i(5843);
-      let r = i(6749),
-        o = i(2833);
+        i(75843);
+      let r = i(96749),
+        o = i(62833);
       function n(e) {
         return void 0 !== e.default;
       }
@@ -47,8 +47,8 @@
           {
             src: c,
             sizes: f,
-            unoptimized: g = !1,
-            priority: m = !1,
+            unoptimized: m = !1,
+            priority: g = !1,
             loading: h,
             className: p,
             quality: b,
@@ -59,19 +59,19 @@
             overrideSrc: _,
             onLoad: S,
             onLoadingComplete: j,
-            placeholder: P = 'empty',
-            blurDataURL: C,
+            placeholder: C = 'empty',
+            blurDataURL: P,
             fetchPriority: z,
             decoding: O = 'async',
             layout: E,
             objectFit: M,
             objectPosition: I,
             lazyBoundary: R,
-            lazyRoot: D,
-            ...k
+            lazyRoot: A,
+            ...D
           } = e,
-          { imgConf: A, showAltText: F, blurComplete: G, defaultLoader: N } = t,
-          B = A || o.imageConfigDefault;
+          { imgConf: k, showAltText: N, blurComplete: F, defaultLoader: G } = t,
+          B = k || o.imageConfigDefault;
         if ('allSizes' in B) l = B;
         else {
           let e = [...B.deviceSizes, ...B.imageSizes].sort((e, t) => e - t),
@@ -79,12 +79,12 @@
             r = null == (i = B.qualities) ? void 0 : i.sort((e, t) => e - t);
           l = { ...B, allSizes: e, deviceSizes: t, qualities: r };
         }
-        if (void 0 === N)
+        if (void 0 === G)
           throw Error(
             'images.loaderFile detected but the file is missing default export.\nRead more: https://nextjs.org/docs/messages/invalid-images-config'
           );
-        let L = k.loader || N;
-        delete k.loader, delete k.srcSet;
+        let L = D.loader || G;
+        delete D.loader, delete D.srcSet;
         let W = '__next_img_default' in L;
         if (W) {
           if ('custom' === l.loader)
@@ -128,7 +128,7 @@
           if (
             ((d = e.blurWidth),
             (u = e.blurHeight),
-            (C = C || e.blurDataURL),
+            (P = P || e.blurDataURL),
             (q = e.src),
             !y)
           ) {
@@ -143,16 +143,16 @@
             } else (U = e.width), (V = e.height);
           }
         }
-        let T = !m && ('lazy' === h || void 0 === h);
+        let T = !g && ('lazy' === h || void 0 === h);
         (!(c = 'string' == typeof c ? c : q) ||
           c.startsWith('data:') ||
           c.startsWith('blob:')) &&
-          ((g = !0), (T = !1)),
-          l.unoptimized && (g = !0),
+          ((m = !0), (T = !1)),
+          l.unoptimized && (m = !0),
           W &&
             !l.dangerouslyAllowSVG &&
             c.split('?', 1)[0].endsWith('.svg') &&
-            (g = !0);
+            (m = !0);
         let H = s(b),
           J = Object.assign(
             y
@@ -168,24 +168,24 @@
                   objectPosition: I,
                 }
               : {},
-            F ? {} : { color: 'transparent' },
+            N ? {} : { color: 'transparent' },
             x
           ),
           Y =
-            G || 'empty' === P
+            F || 'empty' === C
               ? null
-              : 'blur' === P
+              : 'blur' === C
                 ? 'url("data:image/svg+xml;charset=utf-8,' +
                   (0, r.getImageBlurSvg)({
                     widthInt: U,
                     heightInt: V,
                     blurWidth: d,
                     blurHeight: u,
-                    blurDataURL: C || '',
+                    blurDataURL: P || '',
                     objectFit: J.objectFit,
                   }) +
                   '")'
-                : 'url("' + P + '")',
+                : 'url("' + C + '")',
           $ = Y
             ? {
                 backgroundSize: J.objectFit || 'cover',
@@ -250,7 +250,7 @@
           })({
             config: l,
             src: c,
-            unoptimized: g,
+            unoptimized: m,
             width: U,
             quality: H,
             sizes: f,
@@ -258,7 +258,7 @@
           });
         return {
           props: {
-            ...k,
+            ...D,
             loading: T ? 'lazy' : h,
             fetchPriority: z,
             width: U,
@@ -270,11 +270,11 @@
             srcSet: K.srcSet,
             src: _ || K.src,
           },
-          meta: { unoptimized: g, priority: m, placeholder: P, fill: y },
+          meta: { unoptimized: m, priority: g, placeholder: C, fill: y },
         };
       }
     },
-    6749: (e, t) => {
+    96749: (e, t) => {
       'use strict';
       function i(e) {
         let {
@@ -312,7 +312,7 @@
           },
         });
     },
-    2833: (e, t) => {
+    62833: (e, t) => {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (function (e, t) {
@@ -347,7 +347,7 @@
           unoptimized: !1,
         };
     },
-    8516: (e, t, i) => {
+    38516: (e, t, i) => {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (function (e, t) {
@@ -361,10 +361,10 @@
             return a;
           },
         });
-      let r = i(3264),
-        o = i(2326),
-        n = i(1066),
-        s = r._(i(6352));
+      let r = i(73264),
+        o = i(42326),
+        n = i(71066),
+        s = r._(i(56352));
       function a(e) {
         let { props: t } = (0, o.getImgProps)(e, {
           defaultLoader: s.default,
@@ -382,7 +382,7 @@
       }
       let l = n.Image;
     },
-    6352: (e, t) => {
+    56352: (e, t) => {
       'use strict';
       function i(e) {
         var t;
@@ -416,7 +416,7 @@
         (i.__next_img_default = !0);
       let r = i;
     },
-    5843: (e, t) => {
+    75843: (e, t) => {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 }),
         Object.defineProperty(t, 'warnOnce', {

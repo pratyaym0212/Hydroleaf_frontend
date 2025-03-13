@@ -1,0 +1,26 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [689],
+  {
+    3510: (A, e, t) => {
+      Promise.resolve().then(t.t.bind(t, 7970, 23)),
+        Promise.resolve().then(t.bind(t, 4765));
+    },
+    4765: (A, e, t) => {
+      'use strict';
+      t.r(e), t.d(e, { default: () => a });
+      let a = {
+        src: '/_next/static/media/Image2.48e1eb99.png',
+        height: 1024,
+        width: 1792,
+        blurDataURL:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAAQlBMVEWpqZiKjXqGiWaep3yrtq2uto3BxLWgqJejq41/kIqns36jqoedmYiQnGGVoXTS19GNpoejtbaSpJeLnXKlraaZqqTY6ZonAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAMUlEQVR4nAXBiQHAIAgAsVNRQOvf7r9qE8IDIu5EpbWkYLlmqxZJfaziX6DoPVP2+wMWTQFG8EHKBAAAAABJRU5ErkJggg==',
+        blurWidth: 8,
+        blurHeight: 5,
+      };
+    },
+  },
+  (A) => {
+    var e = (e) => A((A.s = e));
+    A.O(0, [970, 441, 517, 358], () => e(3510)), (_N_E = A.O());
+  },
+]);
