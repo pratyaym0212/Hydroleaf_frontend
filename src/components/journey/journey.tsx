@@ -17,19 +17,22 @@ const Journey: React.FC = () => {
           width={600}
           height={400}
         />
-        <p>
-          Hydroleaf started with a vision to revolutionize farming through smart
-          technology. What began as a small initiative has now grown into a
-          pioneering effort in hydroponic farming, combining automation, IoT,
-          and AI to make agriculture more efficient, profitable, and
-          eco-friendly.
-        </p>
-        <p>
-          Our journey is driven by a passion for sustainability and innovation,
-          empowering farmers with cutting-edge solutions that reduce resource
-          waste and increase yield. With continuous research and technological
-          advancements, Hydroleaf is shaping the future of smart farming.
-        </p>
+        <div className="section-content-area">
+          <p>
+            Hydroleaf started with a vision to revolutionize farming through
+            smart technology. What began as a small initiative has now grown
+            into a pioneering effort in hydroponic farming, combining
+            automation, IoT, and AI to make agriculture more efficient,
+            profitable, and eco-friendly.
+          </p>
+          <p>
+            Our journey is driven by a passion for sustainability and
+            innovation, empowering farmers with cutting-edge solutions that
+            reduce resource waste and increase yield. With continuous research
+            and technological advancements, Hydroleaf is shaping the future of
+            smart farming.
+          </p>
+        </div>
       </div>
     </section>
   );

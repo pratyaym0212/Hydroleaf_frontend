@@ -132,6 +132,8 @@ export async function PATCH(req: Request) {
 }
 
 // Delete a blog by ID (DELETE)
+import { DeleteObjectCommand } from '@aws-sdk/client-s3';
+
 export async function DELETE(req: Request) {
   try {
     const { id } = await req.json();
@@ -143,6 +145,30 @@ export async function DELETE(req: Request) {
       );
     }
 
+    // Fetch blog to get image URL
+    const blog = await prisma.blog.findUnique({
+      where: { id: Number(id) },
+    });
+
+    if (!blog) {
+      return NextResponse.json({ error: 'Blog not found' }, { status: 404 });
+    }
+
+    // Extract file name from S3 URL
+    const imageUrl = blog.image;
+    const fileName = imageUrl.split('/').pop(); // Get the filename from URL
+
+    // Delete from S3 if exists
+    if (fileName) {
+      await s3.send(
+        new DeleteObjectCommand({
+          Bucket: process.env.AWS_BUCKET_NAME!,
+          Key: fileName,
+        })
+      );
+    }
+
+    // Delete from database
     await prisma.blog.delete({
       where: { id: Number(id) },
     });

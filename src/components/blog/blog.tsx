@@ -37,23 +37,23 @@ const Blogs: React.FC = () => {
       <div className="section-content">
         <h2>Latest Blogs</h2>
         {blogs.map((blog) => (
-          <div
-            key={blog.id}
-            className={`blog-container ${blog.reverse ? 'reverse' : ''}`}
-          >
-            <div className="blog-image-container">
-              <Image
-                src={blog.image}
-                alt={`Image for ${blog.title}`}
-                className="blog-image"
-                width={500}
-                height={300}
-                priority
-              />
-            </div>
-            <div className="blog-content">
-              <h3>{blog.title}</h3>
-              <p>{blog.content}</p>
+          // ✅ FIX: Move key to the outermost div
+          <div key={blog.id} className="blog-wrapper">
+            <div className={`blog-container ${blog.reverse ? 'reverse' : ''}`}>
+              <div className="blog-image-container">
+                <Image
+                  src={blog.image}
+                  alt={`Image for ${blog.title}`}
+                  className="blog-image"
+                  width={1000}
+                  height={1000}
+                  priority
+                />
+              </div>
+              <div className="blog-content">
+                <h3>{blog.title}</h3>
+                <p>{blog.content}</p>
+              </div>
             </div>
           </div>
         ))}

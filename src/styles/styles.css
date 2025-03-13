@@ -6,10 +6,12 @@ body {
   color: #222;
   line-height: 1.8;
   scroll-behavior: smooth;
+  flex-direction: column;
 }
 
 html {
   scroll-behavior: smooth;
+  flex-direction: column;
 }
 
 header {
@@ -77,6 +79,9 @@ section.in-view {
   padding: 20px; /* Adds spacing around text */
   letter-spacing: 0.5px; /* Slightly increases letter spacing for a cleaner look */
   color: #2c3e50; /* Ensures good contrast */
+}
+.section-content-area {
+  margin-top: 10vh; /* Ensures good contrast */
 }
 
 .dark .section-content {
@@ -196,8 +201,10 @@ img.responsive {
 }
 
 .blog-image {
-  width: 90%;
-  max-width: 350px;
+  width: 120vw;
+  height: 25vh;
+  max-width: 100%;
+  object-fit: fill;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -609,13 +616,6 @@ section.show {
   }
 
   /* Contact Section */
-  .dark-mode .contact-section input,
-  .dark-mode .contact-section textarea {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #444;
-  }
-
   /* WhatsApp Icon */
   .dark-mode .whatsapp-icon {
     background-color: #128c7e;
@@ -905,6 +905,7 @@ section.in-view {
 
 .dark .section-content {
   color: #f5f5f5; /* Light text for dark mode */
+  background-color: #0b370f;
 }
 .section-content h2 {
   margin-top: 0; /* Removes default margin */
@@ -986,6 +987,7 @@ img.responsive {
 }
 
 footer {
+  position: relative;
   text-align: center;
   padding: 20px;
   background-color: #333;
@@ -1724,6 +1726,8 @@ section.show {
 
 /* Footer */
 .dark footer {
+  text-align: center;
+  padding: 20px;
   background-color: #111;
   color: #ccc;
 }
