@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
       <div className="logoContainer">
         <Image
           src={logo}
-          alt="Hydroleaf Logo"
+          alt="Hydroleaf"
           className="logo"
           width={150}
           height={50}
