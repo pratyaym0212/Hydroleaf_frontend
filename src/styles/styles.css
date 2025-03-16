@@ -1780,3 +1780,89 @@ body {
 }
 
 /* Contact Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.darkModeToggle {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Dark Mode Styles */
+.dark .navbar {
+  background: #1a1a1a;
+  color: white;
+}
+
+.dark .navLinks a {
+  color: white;
+}
+
+.dark .scrolled {
+  background: rgba(26, 26, 26, 0.9);
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .navLinks.open {
+    right: 0;
+  }
+
+  .dark .navLinks {
+    background: #1a1a1a;
+  }
+}
