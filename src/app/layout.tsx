@@ -13,16 +13,47 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { ThemeSwitcher } from '@/components/theme-switcher';
 import { Toaster } from '@/components/ui/toaster';
 import { AuthProvider } from '@/context/AuthContext';
+import { siteConfig } from '@/lib/constant'; // Import site metadata
 import { fonts } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 
 export const RootLayout = ({ children }: PropsWithChildren) => {
-  const pathname = usePathname(); // ✅ Now it's safe in a client component
+  const pathname = usePathname(); // ✅ Safe in a client component
 
   return (
     <AuthProvider>
       <html lang="en" suppressHydrationWarning>
         <head>
+          {/* SEO Metadata */}
+          <title>{siteConfig.title()}</title>
+          <meta name="description" content={siteConfig.description()} />
+          <meta name="keywords" content={siteConfig.keywords().join(', ')} />
+          <meta name="robots" content="index, follow" />
+          {/* <meta name="google-site-verification" content={siteConfig.googleSiteVerificationId()} /> */}
+
+          {/* OpenGraph Metadata */}
+          <meta property="og:title" content={siteConfig.title()} />
+          <meta property="og:description" content={siteConfig.description()} />
+          {/* <meta property="og:url" content={siteConfig.url()} /> */}
+          <meta property="og:site_name" content={siteConfig.title()} />
+          <meta property="og:image" content="/opengraph-image.png" />
+          <meta property="og:type" content="website" />
+
+          {/* Twitter Metadata */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={siteConfig.title()} />
+          <meta name="twitter:description" content={siteConfig.description()} />
+          <meta name="twitter:image" content="/opengraph-image.png" />
+
+          {/* Favicon */}
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/images/logo_transparent.png"
+          />
+          <link rel="apple-touch-icon" href="/images/logo_transparent.png" />
+
           {/* Google Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
