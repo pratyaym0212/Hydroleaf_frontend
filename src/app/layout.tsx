@@ -45,7 +45,6 @@ export const RootLayout = ({ children }: PropsWithChildren) => {
           <meta name="twitter:description" content={siteConfig.description()} />
           <meta name="twitter:image" content="/opengraph-image.png" />
 
-          {/* Favicon */}
           <link rel="icon" href="/favicon.ico" sizes="any" />
           <link
             rel="icon"
@@ -53,6 +52,18 @@ export const RootLayout = ({ children }: PropsWithChildren) => {
             href="/images/logo_transparent.png"
           />
           <link rel="apple-touch-icon" href="/images/logo_transparent.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/images/logo_transparent.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="512x512"
+            href="/images/logo_transparent.png"
+          />
 
           {/* Google Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -25,27 +25,32 @@ const Navbar: React.FC = () => {
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logoContainer">
-        <Image
-          src={logo}
-          alt="Hydroleaf"
-          className="logo"
-          width={150}
-          height={50}
-        />
-      </div>
-      <div
-        className="menuIcon"
-        role="button"
-        tabIndex={0}
-        onClick={() => setMenuOpen(!menuOpen)}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            setMenuOpen(!menuOpen);
-          }
-        }}
-      >
-        {menuOpen ? <X size={30} /> : <Menu size={30} />}
+      <div className="logoMenuContainer">
+        {/* Logo */}
+        <div className="logoContainer">
+          <Image
+            src={logo}
+            alt="Hydroleaf"
+            className="logo"
+            width={150}
+            height={50}
+          />
+        </div>
+
+        {/* Menu Icon */}
+        <div
+          className="menuIcon"
+          role="button"
+          tabIndex={0}
+          onClick={() => setMenuOpen(!menuOpen)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              setMenuOpen(!menuOpen);
+            }
+          }}
+        >
+          {menuOpen ? <X size={30} /> : <Menu size={30} />}
+        </div>
       </div>
 
       <nav className={`navLinks ${menuOpen ? 'open' : ''}`}>
