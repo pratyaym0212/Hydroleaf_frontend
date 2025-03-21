@@ -76,6 +76,9 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'], // or a different font
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
