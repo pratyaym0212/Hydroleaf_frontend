@@ -69,6 +69,9 @@ const Navbar: React.FC = () => {
         <Link href="/blog" onClick={closeMenu}>
           Blog
         </Link>
+        <Link href="/videos" onClick={closeMenu}>
+          Hydroponics World
+        </Link>
         <Link href="/contact" onClick={closeMenu}>
           Contact
         </Link>
