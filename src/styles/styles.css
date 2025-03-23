@@ -248,7 +248,7 @@ body {
   justify-content: center;
   background-size: cover;
   background-position: center;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out !important;
 }
 
 .hero-container {
@@ -283,7 +283,6 @@ body {
 /* Features Section */
 .features-section {
   background: #fdfdfd;
-  /* Soft white */
   padding: 80px 20px;
 }
 
@@ -314,24 +313,33 @@ h3 {
 .step-item {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items within each step */
+  align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 3000px; /* Adjust size as needed */
+  width: 100%; 
+  max-width: 350px;  /* Adjust size as needed */
 }
 
 .step-item img {
-  width: 300px; /* Adjust image size */
-  height: auto;
+  width: 350px; /* Ensure consistent image width */
+  height: 150px; /* Ensure consistent height */
+  object-fit: cover; 
   margin-bottom: 15px;
+  border-radius: 8px;
   display: block;
 }
 
 /*  */
 .section-content img {
   display: block;
-  margin: 0 auto 20px;
+  width: 75%; /* Ensures images scale to their container */
+  max-width: 250px; /* Sets a uniform maximum width */
+  height: 150px; /* Fixes height to keep consistency */
+  object-fit: cover; /* Prevents distortion and maintains aspect ratio */
+  margin: 0 auto 20px; /* Centers the image */
+  border-radius: 8px; /* Optional: Adds rounded corners for a polished look */
 }
+
 
 /* Initial hidden state */
 .fade-in {
@@ -899,8 +907,8 @@ section.in-view {
   margin: 0 auto;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.8; /* Improved line spacing for readability */
-  text-align: justify; /* Aligns text evenly on both sides */
+  line-height: 1.8; /* Improved line spacing for readability *//* Centers the text block */
+  text-align: left; /* Aligns text evenly on both sides */
   padding: 20px; /* Adds spacing around text */
   letter-spacing: 0.5px; /* Slightly increases letter spacing for a cleaner look */
   color: #2c3e50; /* Ensures good contrast */
@@ -1906,7 +1914,7 @@ body {
 /* Feature List */
 .feature-list {
   list-style: none;
-  padding: 0;
+  padding: 20px;
 }
 
 .feature-list li {
@@ -2077,4 +2085,43 @@ h2 {
 
 .video-link:hover {
   text-decoration: underline;
+}
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.feature-box {
+  background: #03ae25;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  transition: transform 0.1s;
+}
+
+.feature-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #f2f2f2;
+}
+
+.expanded {
+  background: #13ca65;
 }
