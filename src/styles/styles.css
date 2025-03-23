@@ -10,7 +10,6 @@ body {
   flex-direction: column;
 }
 
-
 html {
   scroll-behavior: smooth;
   flex-direction: column;
@@ -316,14 +315,14 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%; 
-  max-width: 350px;  /* Adjust size as needed */
+  width: 100%;
+  max-width: 350px; /* Adjust size as needed */
 }
 
 .step-item img {
   width: 350px; /* Ensure consistent image width */
   height: 150px; /* Ensure consistent height */
-  object-fit: cover; 
+  object-fit: cover;
   margin-bottom: 15px;
   border-radius: 8px;
   display: block;
@@ -339,7 +338,6 @@ h3 {
   margin: 0 auto 20px; /* Centers the image */
   border-radius: 8px; /* Optional: Adds rounded corners for a polished look */
 }
-
 
 /* Initial hidden state */
 .fade-in {
@@ -907,7 +905,7 @@ section.in-view {
   margin: 0 auto;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.8; /* Improved line spacing for readability *//* Centers the text block */
+  line-height: 1.8; /* Improved line spacing for readability */ /* Centers the text block */
   text-align: left; /* Aligns text evenly on both sides */
   padding: 20px; /* Adds spacing around text */
   letter-spacing: 0.5px; /* Slightly increases letter spacing for a cleaner look */
@@ -2091,10 +2089,13 @@ h2 {
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+  /* Dark Green */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .feature-box {
-  background: #03ae25;
+  background: #016014; /* Keep the existing green */
   color: white;
   padding: 15px;
   border-radius: 10px;
@@ -2113,7 +2114,12 @@ h2 {
 
 .arrow {
   font-size: 1.5rem;
-  transition: transform 0.1s;
+  transition:
+    transform 0.8s ease-in-out,
+    color 0.8s ease-in-out;
+}
+.feature-box.expanded .arrow {
+  transform: rotate(180deg);
 }
 
 .feature-description {

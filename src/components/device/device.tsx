@@ -12,42 +12,50 @@ const Device: React.FC = () => {
     {
       title: 'AI-Driven Efficiency',
       description:
-        'Efficient LLMs predict and execute dosing via pumps, considering plant type, growth stage, and climate. This reduces human dependency, increases efficiency by 90%, and reduces waste by 50%, accelerating crop yield cycles.',
+        'Efficient LLMs predict and execute dosing via pumps, considering plant type, growth stage, and climate. This reduces human dependency, increases efficiency by 90%, and reduces waste by 50%, accelerating crop yield cycles. The AI-driven system also adjusts the callibration system dynamically. The device can give a detailed plan for as well for a healthy yeild for your plants',
     },
     {
-      title: 'TDS Monitoring',
+      title: 'Sensor Monitoring',
       description:
-        'Accurately calibrates the total dissolved nutrients concentration.',
-    },
-    {
-      title: 'PH Monitoring',
-      description: 'Constantly measures pH levels to predict water acidity.',
+        'TDS and PH are the base of S.N.P device montoring. TDS and PH sensors used accurately predicts the total dissolved nutrients concentration and predict water acidity. The measurment happens in periodic cycles. Depending upon the measurment LLM predicts the doesing concentration.',
     },
     {
       title: 'Automated Dosing',
       description:
-        'Precisely controls up to 4 nutrient pumps to manage pH and nutrient levels.',
+        'Precisely controls up to 4 nutrient pumps to manage pH and nutrient levels. Manual dosing is also possible via the S.N.P device. The device also supports scheduled dosing which is logged in our database to be monitored on your web app. The Pumps are electronically controlled no manual intervention is required.',
     },
     {
       title: 'Cloud-based Architecture',
       description:
-        'Supports cloud services for remote operations from anywhere, anytime.',
+        'Supports cloud services for remote operations from anywhere, anytime. The device is connected to the cloud via Wi-Fi. In our cloud dashboard you can monitor the real-time data, historical data, and also control the device.',
     },
     {
       title: 'Power Memory',
-      description: 'Retains settings even after power loss.',
+      description:
+        'Retains settings even after power loss like wifi, calibration and dosing settings.',
+    },
+    {
+      title: 'Voice Controlled',
+      description:
+        'The device will respond in real time regarding any queries. It is voice activated and can respond in multiple Indian languages.',
     },
     {
       title: 'Wireless Updates',
       description:
-        'Stay updated with the latest AI enhancements and software updates.',
+        'Stay updated with the latest AI enhancements and software updates. The device will automatically updates the software when connected to the internet. This makes the device future proof and low maintainence required.',
     },
   ];
 
   return (
     <section id="device" className="device-section">
-      <div className="section-content">
-        <h2 className="section-title">Smart Nutrient Device</h2>
+      <motion.div
+        className="section-content"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="section-title">Smart Nutrient Dosing</h2>
         <Image
           src={image2}
           alt="Hydroleaf Device"
@@ -55,8 +63,14 @@ const Device: React.FC = () => {
         />
 
         {/* Benefits Section */}
-        <div className="section-content-area">
-          <h3>Why Hydroleaf Device?</h3>
+        <motion.div
+          className="section-content-area"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3>Why S.N.P?</h3>
           <p>
             Hydroleaf is a next-generation IoT-based hydroponic management
             system that enables precision farming by automating nutrient dosing,
@@ -65,6 +79,7 @@ const Device: React.FC = () => {
             real-time data visualization, and wireless connectivity for remote
             control and analytics.
           </p>
+
           <div className="feature-container">
             {features.map((feature, index) => (
               <motion.div
@@ -76,12 +91,14 @@ const Device: React.FC = () => {
                 initial={{ height: 60 }}
                 animate={{ height: expandedIndex === index ? 'auto' : 60 }}
                 transition={{ duration: 0.3 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
               >
                 <div className="feature-header">
                   <span>{feature.title}</span>
                   <motion.div
-                    className="arrow"
                     animate={{ rotate: expandedIndex === index ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
                   >
                     ⬇️
                   </motion.div>
@@ -92,36 +109,45 @@ const Device: React.FC = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Specifications Section */}
-        <div className="section-content-area">
-          <h3> Technical Specifications</h3>
+        <motion.div
+          className="section-content-area"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3>Technical Specifications</h3>
           <table className="specifications-table">
             <tbody>
               <tr>
                 <td>
                   <strong>Connectivity</strong>
                 </td>
-                <td>Wi-Fi, Bluetooth</td>
+                <td>Wi-Fi</td>
               </tr>
               <tr>
                 <td>
-                  <strong>Sensors</strong>
+                  <strong>PH sensor</strong>
                 </td>
-                <td>pH, TDS, Temperature</td>
+                <td>pH electrode with ±0.1 accuracy</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>TDS sensor</strong>
+                </td>
+                <td>Analog conductivity sensor (0-5000 PPM)</td>
               </tr>
               <tr>
                 <td>
                   <strong>Pump Control</strong>
                 </td>
-                <td>Up to 4 dosing pumps</td>
-              </tr>
-              <tr>
                 <td>
-                  <strong>Pump Flow Rate</strong>
+                  4 dosing pumps each 12V peristaltic pump (flow rate: 100-300
+                  mL/min)
                 </td>
-                <td>10ml/sec (adjustable via app)</td>
               </tr>
               <tr>
                 <td>
@@ -133,19 +159,7 @@ const Device: React.FC = () => {
                 <td>
                   <strong>AI Features</strong>
                 </td>
-                <td>Predictive dosing, anomaly detection</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Calibration</strong>
-                </td>
-                <td>One-touch auto-calibration for pH and TDS sensors</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Mobile App</strong>
-                </td>
-                <td>Android & iOS (via Hydroleaf Cloud)</td>
+                <td>Predictive dosing, anomaly detection, self calibration</td>
               </tr>
               <tr>
                 <td>
@@ -157,7 +171,7 @@ const Device: React.FC = () => {
                 <td>
                   <strong>Display</strong>
                 </td>
-                <td>OLED screen for real-time values</td>
+                <td>2.8-inch SPI TFT (320x240 resolution)</td>
               </tr>
               <tr>
                 <td>
@@ -171,47 +185,65 @@ const Device: React.FC = () => {
                 </td>
                 <td>0°C to 50°C</td>
               </tr>
-              {/* <tr><td><strong>Mobile App</strong></td><td>Android & iOS</td></tr> */}
             </tbody>
           </table>
-        </div>
+        </motion.div>
 
         {/* How It Works Section */}
-        <div className="section-content-area">
-          <h3> How the Hydroleaf Device Works</h3>
+        <motion.div
+          className="section-content-area"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3>How the Hydroleaf Device Works</h3>
           <p>
             The Hydroleaf Smart Controller simplifies hydroponic farming by
-            integrating automation and AI-based decision-making. Here’s how it
-            operates:
+            integrating automation...
           </p>
           <ol className="how-it-works-list">
             <li>
-              <strong>Step 1:</strong> The sensors continuously monitor pH, TDS,
-              and temperature in real-time.
+              <strong>Step 1:</strong> Switch ON the device.
             </li>
             <li>
-              <strong>Step 2:</strong> AI algorithms analyze the data and adjust
-              nutrient levels accordingly.
+              <strong>Step 2:</strong> Add the wifi credentials.
             </li>
             <li>
-              <strong>Step 3:</strong> The system automatically activates the
-              appropriate pumps to dose nutrients.
+              <strong>Step 3:</strong> Open your web app and signup/login.
             </li>
             <li>
-              <strong>Step 4:</strong> Farmers can monitor and control settings
+              <strong>Step 4:</strong> Discover your device on the same wifi.
+              This device will now available on your web app.
+            </li>
+            <li>
+              <strong>Step 5:</strong> Add you Plant,Plant type, Growth stage
+              and Region.
+            </li>
+            <li>
+              <strong>Step 6:</strong> The sensors continuously monitor pH, TDS
+              in real-time.
+            </li>
+            <li>
+              <strong>Step 7:</strong> AI algorithms analyze the data and gives
+              out a detailed plan and adjust nutrient levels accordingly.
+            </li>
+            <li>
+              <strong>Step 8:</strong> The system automatically activates the
+              appropriate pumps to dose nutrients and maintai PH depending upon
+              the plants sseeds
+            </li>
+            <li>
+              <strong>Step 9:</strong> Farmers can monitor and control settings
               remotely.
             </li>
             <li>
-              <strong>Step 5:</strong> Historical data is stored for better
+              <strong>Step 10:</strong> Historical data is stored for better
               decision-making and yield optimization.
             </li>
           </ol>
-          <p>
-            This intelligent approach ensures plants receive optimal nutrients,
-            leading to faster growth, higher efficiency, and better crop health.
-          </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
