@@ -13,8 +13,11 @@ import image3 from '../../public/images/Image3.png';
 import image7 from '../../public/images/Image7.jpg';
 import image8 from '../../public/images/Image8.jpg';
 import image9 from '../../public/images/Image9.jpg';
+import image14 from '../../public/images/Image14.jpg';
+import image15 from '../../public/images/Image15.jpg';
+import image16 from '../../public/images/Image16.jpg';
 
-const images = [image7, image8, image9];
+const images = [image7, image8, image9, image14, image15, image16];
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -27,7 +30,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
