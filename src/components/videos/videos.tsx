@@ -35,7 +35,7 @@ const Videos: React.FC = () => {
 
   return (
     <section id="videos">
-      <div className="section-content">
+      <div className="video-content">
         <h2>The Hydroponics World</h2>
         <div className="video-grid">
           {videos.map((video) => (
@@ -44,7 +44,7 @@ const Videos: React.FC = () => {
                 <Image
                   src={video.thumbnail}
                   alt={`Thumbnail for ${video.title}`}
-                  className="video-thumbnail"
+                  className="absolute left-0 top-0 size-full rounded-lg object-cover"
                   width={400}
                   height={225}
                   priority

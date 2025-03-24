@@ -14,10 +14,9 @@ import image7 from '../../public/images/Image7.jpg';
 import image8 from '../../public/images/Image8.jpg';
 import image9 from '../../public/images/Image9.jpg';
 import image14 from '../../public/images/Image14.jpg';
-import image15 from '../../public/images/Image15.jpg';
 import image16 from '../../public/images/Image16.jpg';
 
-const images = [image7, image8, image9, image14, image15, image16];
+const images = [image7, image8, image9, image14, image16];
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -48,7 +47,7 @@ const Home: React.FC = () => {
       >
         <div className="hero-container">
           <div className="hero-content">
-            <h1>
+            <h1 className="hero-header">
               Welcome to <span className="highlight">Hydroleaf</span> – The
               Future of Smart Farming
             </h1>
@@ -72,13 +71,13 @@ const Home: React.FC = () => {
         variants={fadeInUp}
       >
         <h2>
-          <strong>Why Choose Hydroleaf?</strong>
+          <strong>Why Hydroleaf?</strong>
         </h2>
         <div className="features-grid">
           <div className="feature-item">
             <h3>🌱 Sustainable Farming</h3>
             <p>
-              Experience next-gen agriculture with{' '}
+              Experience the future of farming with{' '}
               <strong>precision hydroponics</strong>.
             </p>
           </div>
@@ -86,7 +85,7 @@ const Home: React.FC = () => {
             <h3>🤖 AI & IoT Integration</h3>
             <p>
               Our <strong>intelligent automation system</strong> optimizes plant
-              growth conditions.
+              growth.
             </p>
           </div>
           <div className="feature-item">
@@ -116,11 +115,11 @@ const Home: React.FC = () => {
         variants={fadeInUp}
       >
         <h2>
-          <strong>How Hydroleaf Works</strong>
+          <strong>How does Hydroleaf Work</strong>
         </h2>
         <p>
           Our AI-powered hydroponic system <strong>automates</strong> and{' '}
-          <strong>optimizes</strong> farming:
+          <strong>optimizes</strong> farming
         </p>
         <div className="steps-grid">
           <div className="step-item">
