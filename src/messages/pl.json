@@ -10,7 +10,7 @@
   "input_placeholder": "Wpisz swoje imię ...",
   "submit_form": "Wyślij",
   "meta_title": "Hydroleaf",
-  "meta_description": "A Hydroleaf template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, testing tools and more. Jumpstart your project with efficiency and style.",
+  "meta_description": "Hydroleaf is a tech startup which provides solutions for hydropoic, Aeroponic and Aquaponicsystem with the state of the art device build to improve efficiency with AI",
   "meta_keyword_nextjs": "Next.js",
   "meta_keyword_react": "React",
   "meta_keyword_nextjs_starter": "Hydroleaf",
@@ -21,7 +21,7 @@
   "meta_keyword_shadcn_ui": "Shadcn/ui",
   "meta_keyword_next_auth": "Next-auth",
   "meta_keyword_prisma": "Prisma",
-  "nextjs_starter_template_headline": "Hydroleaf template",
+  "nextjs_starter_template_headline": "Hydroleaf",
   "nextjs_starter_template_description": "Szablon startowy Next.js, wyposażony w funkcje takie jak TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, Paraglide, narzędzia testowe i nie tylko. Rozpocznij swój projekt z wydajnością i stylem.",
   "get_started": "Zacznij",
   "github": "Github"
